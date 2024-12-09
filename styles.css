@@ -1,0 +1,125 @@
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+  }
+  
+  html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* footer support */
+    margin-bottom: 100px;
+  }
+  
+  button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* MAIN */
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .calculator {
+    width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .screen {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .screen-last {
+    min-height: 35px;
+    font-size: 23px;
+    color: white;
+  }
+  
+  .screen-current {
+    min-height: 64px;
+    font-size: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+  }
+  
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+    
+  .btn {
+    padding: 20px;
+    border-radius: 100px;
+    background-color: #f7f9fc;
+    font-size: 20px;
+  }
+
+  .btnSign {
+    background-color: #c2e7ff;
+    border-radius: 100px;
+  }
+
+  .btn, .btnSign, .btnEquals {
+    font-size: 30px;
+  }
+
+  .btnEquals{
+    background-color: #d3e3fd;
+    border-radius: 100px;
+  }
+
+  .btn-grey {
+    background-color: #a0a0a0
+  }
+
+  .btn-yellow {
+    color: white;
+    background-color: #f69906;
+  }
+
+  .btn-num, .btn-point, .btn-delete {
+    color: white;
+    background-color: #313131;
+  }
+
+  .span-2 {
+    grid-column: span 2;
+    text-align: left;
+  }
+
+  /* Disables input spinners in calc screen */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

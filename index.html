@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>IOS Calculator</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="calculator">
+        <div class="screen">
+          <div class="screen-last" id="lastOperationScreen"></div>
+          <div class="screen-current" id="currentOperationScreen">0</div>
+        </div>
+        <div class="buttons-grid">
+
+          <button class="btn btn-grey" id="clearBtn" onclick="this.blur();">AC</button>
+          <button class="btnSign btn-grey" onclick="this.blur();" data-operator>+/-</button>
+          <button class="btnSign btn-grey " onclick="this.blur();" data-operator>%</button>
+          <button class="btnSign btn-yellow" onclick="this.blur();" data-operator>÷</button>
+          
+          <button class="btn btn-num" onclick="this.blur();" data-number>7</button>
+          <button class="btn btn-num" onclick="this.blur();" data-number>8</button>
+          <button class="btn btn-num" onclick="this.blur();" data-number>9</button>
+          <button class="btnSign btn-yellow" onclick="this.blur();" data-operator>×</button>
+
+          <button class="btn btn-num" onclick="this.blur();" data-number>4</button>
+          <button class="btn btn-num" onclick="this.blur();" data-number>5</button>
+          <button class="btn btn-num" onclick="this.blur();" data-number>6</button>
+          <button class="btnSign btn-yellow" onclick="this.blur();" data-operator>−</button>
+
+          <button class="btn btn-num" onclick="this.blur();" data-number>1</button>
+          <button class="btn btn-num" onclick="this.blur();" data-number>2</button>
+          <button class="btn btn-num" onclick="this.blur();" data-number>3</button>
+          <button class="btnSign btn-yellow" onclick="this.blur();" data-operator>+</button>
+
+          <button class="btn btn-num span-2" onclick="this.blur();" data-number>0</button>
+          <button class="btn btn-point" onclick="this.blur();" id="pointBtn">.</button>
+          <button class="btnEquals btn-yellow" onclick="this.blur();" id="equalsBtn">=</button> 
+        </div>
+      </div>
+    </main>
